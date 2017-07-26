@@ -1,0 +1,257 @@
+/* Sidebar */
+#sidebar-wrapper{
+    z-index: 1;
+    position: fixed;
+    width: 0;
+    height: 100%;
+    overflow-y: hidden;
+    background: #2C3E50;
+    /*border: 2px solid red;*/
+    opacity: 0.9;
+    transition: 1s;
+}
+#sidebar-wrapper{
+    transition: 1s;
+}
+
+
+/* Always take up entire screen */
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    /*border: 5px solid blue;*/
+    transition: 1s;
+}
+
+
+/* Change with of sidebar from 0 to 250px */
+#wrapper.menuDisplayed #sidebar-wrapper{
+    transition: 1s;
+    width: 300px;
+}
+#wrapper.menuDisplayed #page-content-wrapper{
+    transition: 1s;
+}
+
+/* Since we added left padding, we need to shrink the width by 250px */
+#wrapper.menuDisplayed #page-content-wrapper {
+    padding-left: 330px;
+}
+
+
+/* Sidebar styling - the entire ul list */
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    height: 50px;
+    text-indent: 20px;
+    line-height: 50px;
+}
+
+.list,.list2{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.list:hover,.list2:hover {
+    background: #16A085;
+}
+.list2{
+    padding-right: 20px;
+    float: right;
+}
+.p{
+    padding-right: 60px;
+}
+.order{
+    text-align: center;
+}
+
+
+/*.sidebar-nav li a {*/
+    /*display: block;*/
+    /*text-decoration: none;*/
+    /*color: #ddd;*/
+/*}*/
+
+/*.sidebar-nav li a:hover {*/
+    /*background: #16A085;*/
+/*}*/
+#menu-toggle{
+    position: fixed;
+    margin-left: 210px;
+    margin-top: 20%;
+    z-index: 3000;
+    height: 60px;
+    width: 40px;
+    outline: none;
+
+}
+.search{
+    margin-left: 40%;
+    transition: 1s;
+    display: inline-block;
+}
+
+.search-bar{
+    background-color: whitesmoke;
+    margin-top: 100px;
+    height: 300px;
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+    color: black;
+    font-family:cursive;
+}
+.new{
+    color: black;
+    font-family: 'Holtwood One SC', serif;
+}
+.top{
+    margin-top: -50px;
+    background-image: url("home-desktop.jpg");
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.beautiful-books{
+    color: white;
+    text-align: center;
+    font-size: 66px;
+    font-weight: 400;
+    font-family: 'Heebo',sans-serif;
+}
+.made-for-you{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Heebo', sans-serif;
+}
+.line,.description{
+    color: white;
+    text-align: center;
+}
+.description{
+    font-family: 'Heebo', sans-serif;
+    font-size: 35px;
+}
+.get-started{
+    margin-left: 46.5%;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+
+}
+.get-started:hover{
+    background-color: black;
+    color: white;
+    size: 50px;
+    transition: 0.3s;
+}
+.main{
+    margin-left: 100px;
+    margin-top: 50px;
+    box-shadow: 0 0 5px 1px orange;
+    transition: 1s;
+    min-height: 250px;
+
+}
+#name{
+    font-size: 20px;
+    background-color: #2C3E50;
+    color: orange;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#description{
+    /*box-shadow: 0 0 5px 1px orange;*/
+    /*min-height: 100px;*/
+}
+.four{
+    min-height: 120px;
+    margin-top: 50px;
+    margin-left: 30px;
+    box-shadow: 0 0 5px 1px orange;
+    height: 80px;
+    width: 300px;
+    text-align: center;
+}
+.picture{
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    float: left;
+}
+.data{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
+    font-family: 'Istok Web', sans-serif;
+}
+.describe{
+    font-weight: bolder;
+    font-size: large;
+}
+.right{
+    list-style: none;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bolder;
+}
+.main:hover,.four:hover{
+    transform: scale(1.06,1.06);
+    transition: 1s ease-in;
+}
+.launch{
+    display:none;
+}
+.launch.menuDisplayed{
+    display: inline;
+    z-index: 100000;
+}
+.model{
+    position: sticky;
+    top:90%;
+    z-index: 1;
+    margin-left: -25%;
+}
+#wrapper.menuDisplayed #menu-toggle{
+    position: fixed;
+    margin-left: 110px;
+    margin-top: 20%;
+    z-index: 3000;
+    height: 60px;
+    width: 40px;
+    outline: none;
+}
+.output-name{
+    list-style: none;
+    line-height: 35px;
+}
+.output-price{
+    float: right;
+}
+.output-name,.output-price{
+    font-size: 20px;
+}
+.partition{
+    text-align: center;
+}
+.modal-title{
+    text-align: center;
+}
+.address{
+    width: 100%;
+    height: 100px;
+}
+.l{
+   padding-left: 0px;
+ }
